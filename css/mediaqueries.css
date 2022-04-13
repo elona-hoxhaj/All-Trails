@@ -1,10 +1,4 @@
 @media (min-width: 90em) {
-  .hero {
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    transform: translate(-50%, -68%);
-  }
 
   .logo img {
     width: 26%;

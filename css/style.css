@@ -22,7 +22,7 @@
             - Accents: #0077b6
             - Greys: #003c00
         -- Tins & Shades
-            - Tints: #f1f1f1, #c1c1c1, rgb(252, 252, 252), rgb(60, 60, 60), rgb(71, 71, 71)
+            - Tints: #f1f1f1, #c1c1c1, rgb(60, 60, 60), rgb(71, 71, 71), rgb(120, 120, 120), rgb(252, 252, 252)
             - Shades: #338333, #0096c7, rgba(160, 160, 80, 0.08)
     --- Shadow:
     --- Border: 
@@ -82,6 +82,10 @@
     url(../img/hero/hero.jpg);
   background-size: cover;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
@@ -90,11 +94,6 @@
   gap: 1.6rem;
   justify-content: center;
   align-items: center;
-
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -75%);
 }
 
 .hero-content {
@@ -291,7 +290,7 @@
 .figure-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(60, 60, 60);
+  color: rgb(120, 120, 120);
 }
 
 .star-rating {
