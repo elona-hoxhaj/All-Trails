@@ -1,0 +1,209 @@
+/* Log In START */
+
+.login-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  justify-content: center;
+
+  height: 650px;
+  width: 500px;
+  background-color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 50%;
+  padding: 4.8rem 3.2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid white;
+  box-shadow: 0 10px 10px rgba(255, 255, 255, 0.09);
+}
+
+form * {
+  color: #333;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+form h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.input-login {
+  margin-top: 1rem;
+}
+
+.input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.input:hover,
+.input:active {
+  border-color: #006400;
+}
+
+::placeholder {
+  font-size: 1.4rem;
+  letter-spacing: 0.8px;
+  color: #c1c1c1;
+}
+
+.button-container {
+  margin-top: 1.2rem;
+}
+
+.button-login {
+  width: 100%;
+  background-color: #006400;
+  color: rgb(252, 252, 252);
+  padding: 1.4rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button-login:hover,
+.button-login:active {
+  background-color: #338333;
+  color: rgb(252, 252, 252);
+  box-shadow: 0 10px 10px rgba(160, 160, 80, 0.08);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.social-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: row;
+  color: rgb(60, 60, 60);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.button-text:before,
+.button-text:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #c1c1c1;
+  margin: auto;
+}
+
+.button-text:before {
+  margin-right: 14px;
+}
+
+.button-text:after {
+  margin-left: 14px;
+}
+
+.btn-social {
+  padding-bottom: 0.8rem;
+  height: 50px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.go {
+  background-color: #0077b6;
+  color: rgb(252, 252, 252);
+}
+
+.go:hover,
+.go:active {
+  background-color: #0096c7;
+  color: rgb(252, 252, 252);
+}
+
+.fb {
+  background-color: #00476d;
+  color: rgb(252, 252, 252);
+}
+
+.fb:hover,
+.fb:active {
+  background-color: #0096c7;
+  color: rgb(252, 252, 252);
+}
+
+.icons {
+  position: relative;
+  right: 9.6rem;
+  top: 0.4rem;
+
+  font-size: 2rem;
+}
+
+.go .icons {
+  background-color: white;
+}
+
+.fb .icons {
+  background-color: white;
+  color: #00476d;
+}
+
+.copyrights {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2.4rem 0;
+}
+
+.login-copyright {
+  text-align: center;
+  color: #333;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.footer-content {
+  text-align: center;
+  font-size: 1.4rem;
+  color: rgb(60, 60, 60);
+}
+
+.login-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #006400;
+}
+
+.login-link:hover,
+.login-link:active {
+  font-weight: 700;
+  color: #338333;
+}
+
+/* Log In END */

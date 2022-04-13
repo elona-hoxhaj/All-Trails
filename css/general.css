@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #006400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  row-gap: 6.4rem;
+  column-gap: 4.8rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.primary-heading,
+.secondary-heading {
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.primary-heading {
+  font-size: 5.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.secondary-heading {
+  font-size: 4.4rem;
+}
+
+.ternary-heading {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 8px;
+  /* transition: all 0.3s; */
+}
+
+.btn-signup {
+  background-color: #0077b6;
+  color: rgb(252, 252, 252);
+  border: 2px solid #0077b6;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+  box-shadow: 0 10px 10px rgba(160, 160, 80, 0.08);
+  background-color: #0096c7;
+  color: rgb(252, 252, 252);
+  border: 2px solid #0096c7;
+}
+
+.button-signup {
+  color: #006400;
+  border: 2px solid #006400;
+}
+
+.button-signup:hover,
+.button-signup:active {
+  box-shadow: 0 10px 10px rgba(160, 160, 80, 0.08);
+  background-color: #006400;
+  color: white;
+  border: 2px solid #006400;
+}
+
+.btn-login {
+  background-color: white;
+  color: #0077b6;
+  border: 2px solid currentColor;
+}
+
+.btn-login:hover,
+.btn-login:active {
+  box-shadow: 0 10px 10px rgba(160, 160, 80, 0.08);
+  background-color: rgb(252, 252, 252);
+  color: #0096c7;
+}
+
+.mr-sm {
+  margin-right: 1.6rem !important;
+}
+
+.mt-lg {
+  margin-top: 12.8rem;
+}
+
+.mb-lg {
+  margin-top: 9.6rem;
+}
+
+.pb-lg {
+  padding-bottom: 9.6rem !important;
+}
+
+.pt-lg {
+  padding-top: 9.6rem !important;
+}
