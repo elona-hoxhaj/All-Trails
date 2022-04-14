@@ -9,6 +9,7 @@
         -- Letter Spacing:
            - 0.5px
            - -0.5px
+           - 1px
            - 1.3px
         -- Line Height:
             - Default: 1            
@@ -38,6 +39,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.4rem;
+}
+
+.logo img {
+  width: 36%;
 }
 
 .nav-bar .nav {
@@ -82,13 +87,14 @@
 .hero {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.6rem;
+  justify-content: center;
   align-items: center;
 
   position: absolute;
   top: 80%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -75%);
 }
 
 .hero-content {
@@ -118,23 +124,22 @@
   font-size: 1.6rem;
   color: rgb(60, 60, 60);
 
-  position: relative;
-  left: 3.2rem;
-  top: 0.4rem;
+  position: absolute;
+  left: 1.6rem;
+  top: 2.4rem;
 }
 
 .arrow-circle {
   font-size: 3.6rem;
   color: #006400;
 
-  position: relative;
-  right: 4.8rem;
+  position: absolute;
+  right: 1.6rem;
   top: 1.2rem;
 }
 
 .hero-explore {
   display: block;
-  padding: 1.2rem 0;
 }
 
 .explore-link {
@@ -335,31 +340,22 @@
 }
 
 .stories-content {
-  display: grid;
-  grid-template-columns: 0.9fr;
-
-  position: relative;
-  top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 
 .stories-content h2 {
   color: rgb(60, 60, 60);
-  font-size: 3.6rem;
-
-  position: relative;
-  top: 2.4rem;
+  font-size: 4.4rem;
 }
 
 .stories-desc {
   color: #333;
   font-size: 1.6rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-.stories-btn {
-  position: relative;
-  bottom: 2.4rem;
+  letter-spacing: 1px;
 }
 
 /* STORIES SECTION END */
@@ -425,18 +421,19 @@
 /* FOOTER START */
 
 .footer {
-  padding: 4.8rem 0 0 0;
   border: 1px solid #f1f1f1;
   background-color: #f1f1f1;
 }
 
 .logo-footer img {
-  width: 18%;
+  width: 22%;
   display: block;
-  margin-bottom: 4.8rem;
+  padding: 4.8rem 0;
+}
 
-  position: relative;
-  left: 6.4rem;
+.nav-footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .social-links {
@@ -469,13 +466,6 @@ li {
   font-weight: 700;
   color: #333;
   margin-bottom: 4rem;
-}
-
-.nav-footer {
-  display: block;
-
-  position: relative;
-  right: 3.2rem;
 }
 
 .footer-nav {

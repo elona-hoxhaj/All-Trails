@@ -1,0 +1,60 @@
+@media (min-width: 90em) {
+  .hero {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -68%);
+  }
+
+  .logo img {
+    width: 26%;
+  }
+
+  .logo-footer img {
+    width: 18%;
+  }
+}
+
+@media (max-width: 75em) {
+  .container {
+    width: 90rem;
+    margin: 0 auto;
+  }
+
+  .nav-connect {
+    margin-top: 6.4rem;
+  }
+
+  .button-pro {
+    width: 90%;
+  }
+
+  .stories-content h2 {
+    font-size: 2.4rem;
+  }
+
+  .stories-desc {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 73em) {
+  .btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .nav-connect {
+    margin-top: 6.4rem;
+  }
+}
+
+@media (max-width: 71em) {
+  .btn {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 58em) {
+}
