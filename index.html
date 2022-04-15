@@ -29,7 +29,8 @@
   </head>
 
   <body>
-    <header class="header" id="home">
+    <header id="home" class="open-nav">
+      <div class="header" >
       <div class="logo">
         <img
           src="./img/logo/logo.png"
@@ -43,14 +44,20 @@
           <li><a class="menu" href="#destinations">Destinations</a></li>
           <li>
             <a class="menu" href="signup.html" target="_blank"
-              ><button class="btn btn-signup">Sign Up</button></a
-            >
-            <a class="menu" href="login.html">
-              <button class="btn btn-login">Log In</button>
-            </a>
+              ><button class="btn-nav btn-signup">Sign Up</button></a>    
           </li>
+          <li> 
+            <a class="menu" href="login.html">
+            <button class="btn-nav btn-login">Log In</button>
+          </a>
+        </li>
         </ul>
       </div>
+      <button class="mobile-nav">
+        <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+      </button>
+    </div>
     </header>
 
     <main>
@@ -106,7 +113,7 @@
       <h2 class="secondary-heading">
         <a class="view-link" href="#">View our Destinations<span>&rsaquo;</span></a>
       </h2>
-        <div class="grid grid-3 container">
+        <div class="destination container">
           <figure class="figure-content">
             <img src="./img/destinations/kos.jpg" alt="Kosovo" />
             <figcaption class="figure-info">
@@ -261,7 +268,7 @@
       </section>
       <section class="stories-features pb-lg pt-lg mt-lg">
         <div class="stories-img container">
-          <div class="stories grid grid-3">
+          <div class="stories">
             <div class="container-img">
               <img src="./img/stories/hikelife.jpg" alt="Hike life" />
             </div>
@@ -292,7 +299,7 @@
       </section>
       <section class="pro-features pb-lg pt-lg mt-lg">
         <div class="pro container">
-           <div class="pro-content">
+           <div class="pro-content first-pro">
               <p><span><ion-icon name="earth-outline"></ion-icon></span></p>
               <h3 class="ternary-heading">1% for the Planet</h3>
               <p class="pro-desc">A portion of every Pro membership goes to protecting the wild places we cherish.</p>

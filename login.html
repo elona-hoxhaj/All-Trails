@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,28 +29,32 @@
   </head>
 
   <body>
-    <header class="header" id="home">
-      <div class="logo">
-        <img
-          src="./img/logo/logo.png"
-          alt="AllTrails Logo"
-          style="width: 36%"
-        />
-      </div>
-      <div class="nav-bar">
-        <ul class="nav">
-          <li><a class="menu" href="index.html">Home</a></li>
-          <li><a class="menu" href="#about">About</a></li>
-          <li><a class="menu" href="#destinations">Destinations</a></li>
-          <li>
-            <a class="menu" href="signup.html" target="_blank"
-              ><button class="btn btn-signup">Sign Up</button></a
-            >
-            <a class="menu" href="login.html">
-              <button class="btn btn-login">Log In</button>
-            </a>
-          </li>
-        </ul>
+    <header id="home" class="open-nav">
+      <div class="header">
+        <div class="logo">
+          <img src="./img/logo/logo.png" alt="AllTrails Logo" />
+        </div>
+        <div class="nav-bar">
+          <ul class="nav">
+            <li><a class="menu" href="index.html">Home</a></li>
+            <li><a class="menu" href="#about">About</a></li>
+            <li><a class="menu" href="#destinations">Destinations</a></li>
+            <li>
+              <a class="menu" href="signup.html" target="_blank"
+                ><button class="btn-nav btn-signup">Sign Up</button></a
+              >
+            </li>
+            <li>
+              <a class="menu" href="login.html">
+                <button class="btn-nav btn-login">Log In</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="mobile-nav">
+          <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+          <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+        </button>
       </div>
     </header>
 

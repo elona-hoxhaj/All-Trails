@@ -15,10 +15,10 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 1.6rem;
   justify-content: center;
 
-  height: 650px;
+  height: 600px;
   width: 500px;
   background-color: white;
   padding: 4.8rem 3.2rem;
