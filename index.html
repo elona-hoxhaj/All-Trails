@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaqueries.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css">
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <title>AllTrails</title>
-  </head>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <body>
-    <header id="home" class="open-nav">
-      <div class="header" >
+  <title>AllTrails</title>
+</head>
+
+<body>
+  <header id="header" class="open-nav">
+    <div class="header">
       <div class="logo">
-        <img
-          src="./img/logo/logo.png"
-          alt="AllTrails Logo"
-        />
+        <img src="./img/logo/logo.png" alt="AllTrails Logo" />
       </div>
       <div class="nav-bar">
         <ul class="nav">
@@ -43,14 +33,13 @@
           <li><a class="menu" href="#about">About</a></li>
           <li><a class="menu" href="#destinations">Destinations</a></li>
           <li>
-            <a class="menu" href="signup.html" target="_blank"
-              ><button class="btn-nav btn-signup">Sign Up</button></a>    
+            <a class="menu" href="signup.html" target="_blank"><button class="btn-nav btn-signup">Sign Up</button></a>
           </li>
-          <li> 
+          <li>
             <a class="menu" href="login.html">
-            <button class="btn-nav btn-login">Log In</button>
-          </a>
-        </li>
+              <button class="btn-nav btn-login">Log In</button>
+            </a>
+          </li>
         </ul>
       </div>
       <button class="mobile-nav">
@@ -58,237 +47,274 @@
         <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
       </button>
     </div>
-    </header>
+  </header>
 
-    <main>
-      <section class="hero-section">
-        <div class="hero">
-          <div class="hero-content">
-            <h1 class="primary-heading">Find your next trail</h1>
-          </div>
-          <div class="hero-search">
-            <ion-icon class="search-outline" name="search"></ion-icon>
-            <input
-              type="text"
-              class="search-term"
-              placeholder="Search by country, city or trail name"
-            />
-            <ion-icon
-              class="arrow-circle"
-              name="arrow-forward-circle"
-            ></ion-icon>
-          </div>
-          <div class="hero-explore">
-            <a class="explore-link" href="#explore">Explore nearby trails</a>
-          </div>
+  <main>
+    <section class="hero-section">
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="primary-heading">Find your next trail</h1>
         </div>
-      </section>
-      <section class="about-features pb-lg pt-lg" id="about">
-         <div class="about container">
-         <div class="about-content">
-           <span class="about-icon"><ion-icon name="partly-sunny-outline"></ion-icon></span>
-           <h3 class="title">Hiking</h3>
-           <p>Explore the Wadden Hiking World!</p>
-         </div>
-         <div class="about-content">
-          <span class="about-icon"><ion-icon name="flame-outline"></ion-icon></span>
-          <h3 class="title">Mountains</h3>
-          <p>Explore the Wadden Mountains World!</p>
+        <div class="hero-search">
+          <ion-icon class="search-outline" name="search"></ion-icon>
+          <input type="text" class="search-term" placeholder="Search by country, city or trail name" />
+          <ion-icon class="arrow-circle" name="arrow-forward-circle"></ion-icon>
+        </div>
+        <div class="hero-explore">
+          <a class="explore-link" href="#explore">Explore nearby trails</a>
+        </div>
+      </div>
+    </section>
+    <section class="about-features pb-lg pt-lg" id="about">
+      <div class="about container">
+        <div class="about-content">
+          <span class="about-icon">
+            <ion-icon name="partly-sunny-outline"></ion-icon>
+          </span>
+          <div>
+            <h3 class="title">Hiking</h3>
+            <p>Explore the Wadden Hiking World!</p>
+          </div>
         </div>
         <div class="about-content">
-          <span class="about-icon"><ion-icon name="rainy-outline"></ion-icon></span>
-          <h3 class="title">Forest</h3>
-          <p>Explore the Wadden Forest World!</p>
+          <div class="about-icon">
+            <ion-icon name="flame-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="title">Mountains</h3>
+            <p>Explore the Wadden Mountains World!</p>
+          </div>
         </div>
         <div class="about-content">
-          <span class="about-icon"><ion-icon name="sunny-outline"></ion-icon></span>
-          <h3 class="title">Sea</h3>
-          <p>Explore the Wadden Sea World!</p>
+          <div class="about-icon">
+            <ion-icon name="rainy-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="title">Forest</h3>
+            <p>Explore the Wadden Forest World!</p>
+          </div>
         </div>
+        <div class="about-content">
+          <div class="about-icon">
+            <ion-icon name="sunny-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="title">Sea</h3>
+            <p>Explore the Wadden Sea World!</p>
+          </div>
         </div>
-      </section>
-      <section class="destinations-features pb-lg pt-lg mt-lg"
-        id="destinations"
-      >
+      </div>
+    </section>
+    <section class="destinations-features pb-lg pt-lg mt-lg" id="destinations">
       <h2 class="secondary-heading">
         <a class="view-link" href="#">View our Destinations<span>&rsaquo;</span></a>
       </h2>
-        <div class="destination container">
-          <figure class="figure-content">
-            <img src="./img/destinations/kos.jpg" alt="Kosovo" />
-            <figcaption class="figure-info">
-              <h3 class="ternary-heading">Kosovo</h3>
-              <span class="figure-title">Country</span>
-            </figcaption>
-            <span class="star-rating">
-              <span
-                ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-              ></span>
-              <span
-                ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-              ></span>
-              <span
-                ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-              ></span>
-              <span
-                ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-              ></span>
-              <span
-                ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-              ></span>
+      <div class="destination container">
+        <figure class="figure-content">
+          <img src="./img/destinations/kos.jpg" alt="Kosovo" />
+          <figcaption class="figure-info">
+            <h3 class="ternary-heading">Kosovo</h3>
+            <span class="figure-title">Country</span>
+          </figcaption>
+          <span class="star-rating">
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
             </span>
-            <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
-          </figure>
-          <figure class="figure-content">
-            <img src="./img/destinations/alb.jpg" alt="Albania" />
-            <figcaption class="figure-info">
-              <h3 class="ternary-heading">Albania</h3>
-              <span class="figure-title">Country</span>
-            </figcaption>
-            <span class="star-rating">
-              <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
             </span>
-            <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
-          </figure>
-          <figure class="figure-content">
-            <img src="./img/destinations/gree.jpg" alt="Greece" />
-            <figcaption class="figure-info">
-              <h3 class="ternary-heading">Greece</h3>
-              <span class="figure-title">Country</span>
-            </figcaption>
-            <span class="star-rating">
-              <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon name="star"></ion-icon></ion-icon
-            ></span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
             </span>
-            <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
-          </figure>
-          <figure class="figure-content">
-            <img src="./img/destinations/cro.jpg" alt="Croatia" />
-            <figcaption class="figure-info">
-              <h3 class="ternary-heading">Croatia</h3>
-              <span class="figure-title">Country</span>
-            </figcaption>
-            <span class="star-rating">
-              <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
             </span>
-            <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
-          </figure>
-          <figure class="figure-content">
-            <img src="./img/destinations/mac.jpg" alt="Macedonia" />
-            <figcaption class="figure-info">
-              <h3 class="ternary-heading">Macedonia</h3>
-              <span class="figure-title">Country</span>
-            </figcaption>
-            <span class="star-rating">
-              <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon name="star"></ion-icon></ion-icon
-            ></span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
             </span>
-            <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
-          </figure>
-          <figure class="figure-content">
-            <img src="./img/destinations/mon.jpg" alt="Montenegro" />
-            <figcaption class="figure-info">
-              <h3 class="ternary-heading">Montenegro</h3>
-              <span class="figure-title">Country</span>
-            </figcaption>
-            <span class="star-rating">
-              <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon class="checked" name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon name="star"></ion-icon></ion-icon
-            ></span>
-            <span
-              ><ion-icon name="star"></ion-icon></ion-icon
-            ></span>
+          </span>
+          <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </figure>
+        <figure class="figure-content">
+          <img src="./img/destinations/alb.jpg" alt="Albania" />
+          <figcaption class="figure-info">
+            <h3 class="ternary-heading">Albania</h3>
+            <span class="figure-title">Country</span>
+          </figcaption>
+          <span class="star-rating">
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
             </span>
-            <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
-          </figure>
-        </div>
-      </section>
-      <section class="stories-features pb-lg pt-lg mt-lg">
-        <div class="stories-img container">
-          <div class="stories">
-            <div class="container-img">
-              <img src="./img/stories/hikelife.jpg" alt="Hike life" />
-            </div>
-            <div class="container-img">
-              <img src="./img/stories/hiketogether.jpg" alt="Hike together" />
-            </div>
-            <div class="container-img">
-              <img src="./img/stories/familyhike.jpg" alt="Family hike" />
-            </div>
-            <div class="container-img">
-              <img src="./img/stories/childrenhike.jpg" alt="Children hike" />
-            </div>
-            <div class="container-img">
-              <img src="./img/stories/freedomhike.jpg" alt="Freedom hike" />
-            </div>
-            <div class="container-img">
-              <img src="./img/stories/hikewithdog.jpg" alt="Hike with dog" />
-            </div>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+          </span>
+          <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </figure>
+        <figure class="figure-content">
+          <img src="./img/destinations/gree.jpg" alt="Greece" />
+          <figcaption class="figure-info">
+            <h3 class="ternary-heading">Greece</h3>
+            <span class="figure-title">Country</span>
+          </figcaption>
+          <span class="star-rating">
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon name="star"></ion-icon>
+              </ion-icon>
+            </span>
+          </span>
+          <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </figure>
+        <figure class="figure-content">
+          <img src="./img/destinations/cro.jpg" alt="Croatia" />
+          <figcaption class="figure-info">
+            <h3 class="ternary-heading">Croatia</h3>
+            <span class="figure-title">Country</span>
+          </figcaption>
+          <span class="star-rating">
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+          </span>
+          <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </figure>
+        <figure class="figure-content">
+          <img src="./img/destinations/mac.jpg" alt="Macedonia" />
+          <figcaption class="figure-info">
+            <h3 class="ternary-heading">Macedonia</h3>
+            <span class="figure-title">Country</span>
+          </figcaption>
+          <span class="star-rating">
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon name="star"></ion-icon>
+              </ion-icon>
+            </span>
+          </span>
+          <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </figure>
+        <figure class="figure-content">
+          <img src="./img/destinations/mon.jpg" alt="Montenegro" />
+          <figcaption class="figure-info">
+            <h3 class="ternary-heading">Montenegro</h3>
+            <span class="figure-title">Country</span>
+          </figcaption>
+          <span class="star-rating">
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon class="checked" name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon name="star"></ion-icon>
+              </ion-icon>
+            </span>
+            <span>
+              <ion-icon name="star"></ion-icon>
+              </ion-icon>
+            </span>
+          </span>
+          <a href="#">View More<ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </figure>
+      </div>
+    </section>
+    <section class="stories-features pb-lg pt-lg mt-lg">
+      <div class="stories-img container">
+        <div class="stories">
+          <div class="container-img">
+            <img src="./img/stories/hikelife.jpg" alt="Hike life" />
           </div>
-          <div class="stories-content">
+          <div class="container-img">
+            <img src="./img/stories/hiketogether.jpg" alt="Hike together" />
+          </div>
+          <div class="container-img">
+            <img src="./img/stories/familyhike.jpg" alt="Family hike" />
+          </div>
+          <div class="container-img">
+            <img src="./img/stories/childrenhike.jpg" alt="Children hike" />
+          </div>
+          <div class="container-img">
+            <img src="./img/stories/freedomhike.jpg" alt="Freedom hike" />
+          </div>
+          <div class="container-img">
+            <img src="./img/stories/hikewithdog.jpg" alt="Hike with dog" />
+          </div>
+        </div>
+        <div class="stories-content">
           <h2 class="secondary-heading">Built (for everyone) to go wild</h2>
           <p class="stories-desc">Whether you want a casual stroll or a trek to the summit, we've got you covered.</p>
           <a class="stories-btn" href="signup.html">
@@ -296,144 +322,143 @@
           </a>
         </div>
       </div>
-      </section>
-      <section class="pro-features pb-lg pt-lg mt-lg">
-        <div class="pro container">
-           <div class="pro-content first-pro">
-              <p><span><ion-icon name="earth-outline"></ion-icon></span></p>
-              <h3 class="ternary-heading">1% for the Planet</h3>
-              <p class="pro-desc">A portion of every Pro membership goes to protecting the wild places we cherish.</p>
-              <button class="button-pro">Get Pro and give back</button>
-           </div>
-           <div class="pro-content">
-             <p><span><ion-icon name="leaf-outline"></ion-icon></span></p>
-             <h3 class="ternary-heading">10,000 trees (and counting)</h3>
-             <p class="pro-desc">From our birthday to employee anniversaries, we celebrate by giving to One Tree Planted.</p>
-           </div>
-           <div class="pro-content">
-             <p><span><ion-icon name="hand-right-outline"></ion-icon></span></p>
-             <h3 class="ternary-heading">No trace on the trail</h3>
-            <p class="pro-desc">As a Leave No Trace partner, we’re committed to keeping outdoor spaces clean, safe and kind.</p>
-           </div>
+    </section>
+    <section class="pro-features pb-lg pt-lg mt-lg">
+      <div class="pro container">
+        <div class="pro-content first-pro">
+          <p><span>
+              <ion-icon name="earth-outline"></ion-icon>
+            </span></p>
+          <h3 class="ternary-heading">1% for the Planet</h3>
+          <p class="pro-desc">A portion of every Pro membership goes to protecting the wild places we cherish.</p>
+          <button class="button-pro">Get Pro and give back</button>
         </div>
-      </section>
-    </main>
+        <div class="pro-content">
+          <p><span>
+              <ion-icon name="leaf-outline"></ion-icon>
+            </span></p>
+          <h3 class="ternary-heading">10,000 trees (and counting)</h3>
+          <p class="pro-desc">From our birthday to employee anniversaries, we celebrate by giving to One Tree Planted.
+          </p>
+        </div>
+        <div class="pro-content">
+          <p><span>
+              <ion-icon name="hand-right-outline"></ion-icon>
+            </span></p>
+          <h3 class="ternary-heading">No trace on the trail</h3>
+          <p class="pro-desc">As a Leave No Trace partner, we’re committed to keeping outdoor spaces clean, safe and
+            kind.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-      <footer class="footer">
-        <div class="logo-footer container">
-        <a class="footer-logo" href="#">
-          <img src="./img/logo/logo.png" alt="AllTrails Logo" />
-        </a>
-        </div>
-        <div class="nav-footer-container container">
-          <div class="nav-footer">
-            <h3 class="heading-footer">Countries</h3>
-            <ul class="footer-nav">
-              <li>
-                <a class="footer-link" href="#">Regions</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Cities</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Parks</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Trails</a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav-footer">
-            <h3 class="heading-footer">Maps</h3>
-            <ul class="footer-nav">
-              <li>
-                <a class="footer-link" href="#">My maps</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Create maps</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Print maps</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Route Converter</a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav-footer">
-            <h3 class="heading-footer">Company</h3>
-            <ul class="footer-nav">
-              <li>
-                <a class="footer-link" href="#">About</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Jobs</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Press</a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav-footer">
-            <h3 class="heading-footer">Community</h3>
-            <ul class="footer-nav">
-              <li>
-                <a class="footer-link" href="#">Support</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Members</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Give Pro</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">All Trails Gear</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="nav-connect container">
-          <h3 class="heading-footer">Connect with us</h3>
-          <ul class="social-links">
-            <li>
-              <a class="footer-link" href="#">
-                <ion-icon
-                  class="social-icon"
-                  name="logo-instagram"
-                  role="img"
-                ></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a class="footer-link" href="#">
-                <ion-icon
-                  class="social-icon"
-                  name="logo-facebook"
-                  role="img"
-                ></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a class="footer-link" href="#">
-                <ion-icon 
-                class="social-icon" 
-                name="logo-linkedin" 
-                role="img">
-                </ion-icon>
-              </a>
-            </li>
-            <li>
-              <a class="footer-link" href="#">
-                <ion-icon
-                  class="social-icon"
-                  name="logo-twitter"
-                  role="img"
-                ></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <span class="copyright">2022 AllTrails, LLC All Rights Reserved</span>
-      </footer>
-  </body>
+  <footer class="footer">
+    <div class="move-up">
+      <a href="#header">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </a>
+    </div>
+    <div class="logo-footer container">
+      <a class="footer-logo" href="#">
+        <img src="./img/logo/logo.png" alt="AllTrails Logo" />
+      </a>
+    </div>
+    <div class="nav-footer-container container">
+      <div class="nav-footer">
+        <h3 class="heading-footer">Countries</h3>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-link" href="#">Regions</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Cities</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Parks</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Trails</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-footer">
+        <h3 class="heading-footer">Maps</h3>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-link" href="#">My maps</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Create maps</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Print maps</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Route Converter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-footer">
+        <h3 class="heading-footer">Company</h3>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-link" href="#">About</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Jobs</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Press</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-footer">
+        <h3 class="heading-footer">Community</h3>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-link" href="#">Support</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Members</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Give Pro</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">All Trails Gear</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-connect container">
+      <h3 class="heading-footer">Connect with us</h3>
+      <ul class="social-links">
+        <li>
+          <a class="footer-link" href="#">
+            <ion-icon class="social-icon" name="logo-instagram" role="img"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a class="footer-link" href="#">
+            <ion-icon class="social-icon" name="logo-facebook" role="img"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a class="footer-link" href="#">
+            <ion-icon class="social-icon" name="logo-linkedin" role="img">
+            </ion-icon>
+          </a>
+        </li>
+        <li>
+          <a class="footer-link" href="#">
+            <ion-icon class="social-icon" name="logo-twitter" role="img"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <span class="copyright">2022 AllTrails, LLC All Rights Reserved</span>
+  </footer>
+</body>
+
 </html>

@@ -17,6 +17,7 @@ html {
 }
 
 body {
+  background-color: #f1f1f1;
   font-family: "Open Sans", sans-serif;
 
   overflow-x: hidden;
@@ -142,7 +143,7 @@ body {
 }
 
 .mt-lg {
-  margin-top: 12.8rem;
+  margin-top: 9.6rem;
 }
 
 .mb-lg {
@@ -150,9 +151,9 @@ body {
 }
 
 .pb-lg {
-  padding-bottom: 9.6rem !important;
+  padding-bottom: 6.4rem !important;
 }
 
 .pt-lg {
-  padding-top: 9.6rem !important;
+  padding-top: 6.4rem !important;
 }
