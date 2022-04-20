@@ -138,8 +138,8 @@
 }
 
 .search-outline {
-  font-size: 1.6rem;
-  color: rgb(60, 60, 60);
+  font-size: 1.8rem;
+  color: rgb(71, 71, 71);
 
   position: absolute;
   left: 1.6rem;
@@ -151,7 +151,7 @@
   color: #006400;
 
   position: absolute;
-  right: 1.6rem;
+  right: 1.2rem;
   top: 1.2rem;
 }
 
@@ -189,20 +189,29 @@
 
 .about-content p {
   font-size: 1.2rem;
+  letter-spacing: 0.5px;
   color: rgb(71, 71, 71);
   font-weight: 600;
 }
 
 .about-icon {
-  font-size: 3rem;
-  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   border-radius: 50%;
-  border: none;
   background-color: #006400;
+
   width: 9.6rem;
   height: 9.6rem;
-  padding: 12%;
+  padding: 3.2rem;
+}
+
+.about-icon ion-icon {
+  color: white;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .title {
@@ -344,7 +353,6 @@
 
 .stories img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
   transition: all 0.3s;
   border-radius: 8px;
@@ -358,20 +366,17 @@
 .stories-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: 3.2rem;
+  justify-content: center;
   align-items: stretch;
-}
 
-.stories-content h2 {
   color: rgb(60, 60, 60);
-  font-size: 4.4rem;
 }
 
 .stories-desc {
-  color: #333;
   font-size: 1.6rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 /* STORIES SECTION END */
@@ -438,7 +443,6 @@
 .footer {
   position: relative;
   border: 1px solid #f1f1f1;
-
 }
 
 .logo-footer img {
@@ -473,8 +477,13 @@ li {
 .social-icon {
   height: 2.4rem;
   width: 2.4rem;
-  color: rgb(60, 60, 60);
+  color: rgb(71, 71, 71);
   visibility: inherit;
+}
+
+.social-icon:active,
+.social-icon:hover {
+  color: rgb(120, 120, 120);
 }
 
 .heading-footer {
@@ -489,6 +498,8 @@ li {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+
+  font-weight: 500;
 }
 
 .nav-connect {
@@ -502,6 +513,7 @@ li {
 .copyright {
   display: inline-block;
   font-size: 1.4rem;
+  font-weight: 500;
   line-height: 1.5;
   color: rgb(71, 71, 71);
   margin: 4.8rem 0 3.2rem 0;
@@ -518,23 +530,26 @@ li {
   padding: 3.2rem;
 
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  display: block;
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
-  background-color: #fae5d3;
+  background-color: #006400;
 }
 
 .move-up a {
-   text-decoration: none;
+  text-decoration: none;
 }
 
-.move-up ion-icon{
-   width: 3.2rem;
-   height: 3.2rem;
+.move-up *:focus {
+  outline: none;
+}
+
+.move-up ion-icon {
+  color: white;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 /* FOOTER END */

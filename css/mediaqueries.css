@@ -1,8 +1,4 @@
 @media (min-width: 87em) {
-  html {
-    font-size: 75%;
-  }
-
   .mobile-nav {
     display: none;
   }
@@ -11,6 +7,10 @@
 @media (max-width: 75em) {
   html {
     font-size: 47%;
+  }
+
+  .mobile-nav {
+    display: none;
   }
 }
 
@@ -24,7 +24,7 @@
     gap: 2.4rem;
   }
 
-  .header {
+  header {
     position: relative;
   }
 
@@ -34,8 +34,8 @@
 
   .nav-bar {
     position: fixed;
-    left: 0%;
     top: 0%;
+    left: 100%;
     width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.93);
@@ -44,46 +44,36 @@
     align-items: center;
     justify-content: center;
 
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in-out;
 
-    /* 1. Opacity */
+    /* 1. Opacity: 0  */
     opacity: 0;
-
-    /* 2. Mouse and keyboard events to none */
+    /*  2. Set Mouse and keyboard events to none */
     pointer-events: none;
 
     /* 3. Hide element from screen reader */
-
     visibility: hidden;
-    z-index: 10;
-  }
 
-  .nav-bar .nav {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 3.6rem;
-    gap: 3.2rem;
+    /* display: none; */
+
+    z-index: 10;
   }
 
   .open-nav .nav-bar {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    left: 0%;
   }
 
-  .btn-nav {
-    font-size: inherit;
-    padding: 2.4rem 6.4rem;
-  }
-
-  .open-nav btn-nav {
+  .open-nav .mobile-nav {
+    position: fixed;
+    right: 0;
     z-index: 99999;
   }
 
   .open-nav ion-icon[name="close-outline"] {
     display: block;
-    z-index: 99999;
   }
 
   .open-nav ion-icon[name="menu-outline"] {
@@ -91,9 +81,16 @@
     z-index: 99999;
   }
 
-  .open-nav btn-nav {
-    position: fixed;
-    right: 0;
+  .nav-bar .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    gap: 2.4rem;
+  }
+
+  .nav-bar .btn-nav {
+    font-size: inherit;
   }
 }
 
