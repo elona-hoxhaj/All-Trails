@@ -4,12 +4,6 @@
   }
 }
 
-@media (max-width: 82em) {
-  .mobile-nav {
-    display: none;
-  }
-}
-
 @media (max-width: 79em) {
   .mobile-nav {
     display: none;
@@ -57,10 +51,6 @@
 }
 
 @media (max-width: 59em) {
-  .about {
-    justify-content: space-between;
-  }
-
   header {
     position: relative;
   }
@@ -124,6 +114,10 @@
 
   .nav-bar .btn-nav {
     font-size: inherit;
+  }
+
+  .about {
+    justify-content: space-between;
   }
 }
 
