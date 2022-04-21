@@ -4,7 +4,17 @@
   }
 }
 
+@media (max-width: 82em) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
 @media (max-width: 79em) {
+  .mobile-nav {
+    display: none;
+  }
+
   .stories-img {
     gap: 2.4rem;
   }
@@ -252,11 +262,11 @@
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .about-content p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .destination {
@@ -273,6 +283,20 @@
     grid-template-columns: repeat(1, 1fr);
     row-gap: 3.2rem;
   }
+
+  .first-stories {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  .secondary-heading {
+    font-size: 3rem;
+  }
+
+  .stories-desc {
+    font-size: 1.6rem;
+  }
+
 
   .button-pro {
     width: 70%;
