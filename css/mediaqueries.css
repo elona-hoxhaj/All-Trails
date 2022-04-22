@@ -4,7 +4,13 @@
   }
 }
 
-@media (max-width: 75em) {
+@media (max-width: 79em) {
+  .stories-img {
+    gap: 2.4rem;
+  }
+}
+
+@media (max-width: 76em) {
   html {
     font-size: 47%;
   }
@@ -12,16 +18,37 @@
   .mobile-nav {
     display: none;
   }
+
+  .stories {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.4rem;
+  }
+
+  .stories img {
+    width: 90%;
+  }
+
+  .stories-content {
+    gap: 6.4rem;
+  }
+
+  .secondary-heading {
+    font-size: 3rem;
+  }
+
+  .stories-desc {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 1.6rem 2.4rem;
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 59em) {
   .about {
     justify-content: space-between;
-  }
-
-  .stories-content {
-    justify-content: center;
-    gap: 2.4rem;
   }
 
   header {
@@ -46,15 +73,11 @@
 
     transition: all 0.3s ease-in-out;
 
-    /* 1. Opacity: 0  */
     opacity: 0;
-    /*  2. Set Mouse and keyboard events to none */
+
     pointer-events: none;
 
-    /* 3. Hide element from screen reader */
     visibility: hidden;
-
-    /* display: none; */
 
     z-index: 10;
   }
@@ -94,23 +117,7 @@
   }
 }
 
-@media (max-width: 56em) {
-  .pro {
-    grid-template-columns: 1.3fr 1.7fr 1.3fr;
-    column-gap: 2.4rem;
-  }
-
-  .stories-content h2 {
-    line-height: 1.5;
-    font-size: 3rem;
-  }
-
-  .stories-desc {
-    letter-spacing: 0.5px;
-  }
-}
-
-@media (max-width: 46em) {
+@media (max-width: 57em) {
   .hero-section {
     height: 80vh;
   }
@@ -123,37 +130,8 @@
     font-size: 4.4rem;
   }
 
-  .about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 9.6rem;
-  }
-
-  .destination {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 4.8rem;
-  }
-
-  .stories-img {
-    gap: 4.8rem;
-  }
-
-  .stories {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 0.4rem;
-  }
-
-  .stories img {
-    width: 90%;
-  }
-
-  .stories-content {
-    justify-content: center;
-    gap: 3.2rem;
-  }
-
-  .stories-content h2 {
-    font-size: 2.4rem;
+  .mt-lg {
+    margin-top: 6.4rem;
   }
 
   .pro {
@@ -171,33 +149,132 @@
     width: 35%;
     margin-top: 4.8rem;
   }
+
+  .copyright {
+    font-size: 1.8rem;
+    margin: 8rem 0 4.8rem 0;
+  }
 }
 
-@media (max-width: 32em) {
-  .search-term {
-    width: 300px;
-  }
-
-  .primary-heading {
-    font-size: 3rem;
-  }
-
-  ::placeholder {
-    font-size: 1.2rem;
-  }
-
-  .btn {
-    padding: 1.2rem 2.4rem;
-    font-size: 1.6rem;
-  }
-
-  .button-pro {
-    width: 45%;
+@media (max-width: 52em) {
+  .destination {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4.8rem;
   }
 
   .stories-img {
     display: grid;
     grid-template-rows: 1fr;
     row-gap: 6.4rem;
+  }
+
+  .stories-content {
+    gap: 4.8rem;
+  }
+
+  .secondary-heading {
+    font-size: 3.2rem;
+  }
+
+  .stories-desc {
+    font-size: 2rem;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 9.6rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .hero-section {
+    height: 60vh;
+  }
+
+  .search-term {
+    width: 350px;
+  }
+}
+
+@media (max-width: 32em) {
+  .hero-section {
+    height: 50vh;
+  }
+
+  .button-pro {
+    width: 45%;
+  }
+
+  .nav-footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 8rem;
+  }
+
+  .move-up {
+    position: absolute;
+    bottom: 8rem;
+    right: 0.4rem;
+  }
+}
+
+@media (max-width: 27em) {
+  .hero-section {
+    height: 40vh;
+  }
+
+  .primary-heading {
+    font-size: 3.6rem;
+  }
+
+  .search-term {
+    width: 280px;
+    padding: 1.2rem 3.2rem;
+  }
+
+  .search-outline {
+    font-size: 1.4rem;
+
+    position: absolute;
+    left: 1.2rem;
+    top: 1.8rem;
+  }
+
+  .arrow-circle {
+    font-size: 3rem;
+
+    right: 0.8rem;
+    top: 0.8rem;
+  }
+
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1.8rem;
+  }
+
+  .destination {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4.8rem;
+  }
+
+  .view-link {
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+  }
+
+  .stories {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3.2rem;
+  }
+
+  .button-pro {
+    width: 70%;
   }
 }

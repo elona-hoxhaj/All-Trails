@@ -84,18 +84,6 @@ body {
   border-radius: 8px;
 }
 
-.btn-nav,
-.btn-nav:link,
-.btn-nav:visited {
-  display: inline-block;
-  text-decoration: none;
-  border: none;
-  padding: 1.2rem 1.6rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  border-radius: 8px;
-}
-
 .btn,
 .btn:link,
 .btn:visited {

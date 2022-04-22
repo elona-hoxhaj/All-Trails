@@ -154,18 +154,22 @@ form h3 {
 }
 
 .icons {
-  position: relative;
-  right: 9.6rem;
-  top: 0.4rem;
-
   font-size: 2rem;
 }
 
 .go .icons {
+  position: relative;
+  right: 10.6rem;
+  top: 0.4rem;
+
   background-color: white;
 }
 
 .fb .icons {
+  position: relative;
+  right: 9.6rem;
+  top: 0.4rem;
+
   background-color: white;
   color: #00476d;
 }
