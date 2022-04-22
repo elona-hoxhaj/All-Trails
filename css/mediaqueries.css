@@ -233,15 +233,15 @@
 
   .search-term {
     width: 285px;
-    padding: 1.6rem 4.8rem;
+    padding: 1.6rem 3.2rem;
   }
 
   .search-outline {
     font-size: 1.6rem;
 
     position: absolute;
-    left: 1.2rem;
-    top: 1.8rem;
+    left: 0.8rem;
+    top: 2rem;
   }
 
   .arrow-circle {
@@ -273,10 +273,10 @@
     padding: 1.6rem 3.2rem;
   }
 
-  /* .stories {
-    grid-template-columns: repeat(1, 1fr);
+  .stories {
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 3.2rem;
-  } */
+  }
 
   .first-stories {
     grid-column: 1/1;
